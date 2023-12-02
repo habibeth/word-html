@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/e1e800e1fa.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="w-9/12 mx-auto bg-indigo-400 py-20">
+        <div class="grid grid-cols-3 w-10/12 mx-auto justify-between items-center">
+            <div class="font-normal text-sm">
+                <button id="bold-text"><i class="pl-2 fa-solid fa-bold"></i></button>
+                <button id="italic-text"><i class="pl-2 fa-solid fa-italic"></i></button>
+                <button id="underline-text"><i class="pl-2 fa-solid fa-underline"></i></button>
+            </div>
+            <div class="font-normal text-sm">
+                <button id="left-text"><i class="pl-2 fa-solid fa-align-left"></i></button>
+                <button id="center-text"><i class="pl-2 fa-solid fa-align-center"></i></button>
+                <button id="right-text"><i class="pl-2 fa-solid fa-align-right"></i></button>
+                <button id="justify-text"><i class="pl-2 fa-solid fa-align-justify"></i></button>
+            </div>
+            <div class="text-right">
+                <label for="quantity">Font Size:</label>
+                <input onchange="fontSizeChange()" type="number" id="text-size" name="fontSize" min="1" value="12" class="w-1/6 text-center">
+                <button id="text-transform">Aa</button>
+                <label for="head">Color</label>
+                <input onchange="textColorChange()" type="color" id="text-color" name="head" value="#000000" class="" />
+            </div>
+        </div>
+        <div class="mt-5 w-full pl-5 md:pl-20">
+            <textarea name="" id="word-area" cols="110" rows="20" class="p-4 w-11/12 rounded-lg text-xs leading-none"></textarea>
+        </div>
+    </section>
+
+    <script src="js/word.js"></script>
+</body>
+
+</html>
